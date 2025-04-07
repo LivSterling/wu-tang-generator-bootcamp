@@ -13,10 +13,10 @@ function getIndexFromLetter(letter) {
     const code = letter.toUpperCase().charCodeAt(0);
     if (code >= 65 && code <= 90) {
         return code - 65
-    } 
-  }
+    }
+}
 
-  const firstNameWords = [
+const firstNameWords = [
     "Phantom",
     "Savage",
     "Eternal",
@@ -43,7 +43,7 @@ function getIndexFromLetter(letter) {
     "Quiet",
     "Killer",
     "Wicked"
-  ];
+];
 const lastNameWords = [
     "Ronin",
     "Dragon",
@@ -71,91 +71,91 @@ const lastNameWords = [
     "Hunter",
     "Outlaw",
     "Pilgrim"
-  ];
+];
 const cityWords = [
     "Annihilator",
-    "Blade",      
-    "Cipher",     
-    "Dragonfist", 
-    "Enigma",     
-    "Firebrand",  
-    "Ghostface",  
-    "Hurricane",  
-    "Ironclad",   
-    "Jedi",       
-    "Knight",     
-    "Lethal",     
-    "Mystic",     
-    "Nemesis",    
-    "Oracle",     
-    "Punisher",   
-    "Quasar",     
-    "Razor",      
-    "Shadow",     
-    "Thunder",    
-    "Umbra",      
-    "Viper",      
-    "Warlock",    
-    "Xecutioner", 
-    "Yakuza",     
-    "Zenith"      
-  ];
+    "Blade",
+    "Cipher",
+    "Dragonfist",
+    "Enigma",
+    "Firebrand",
+    "Ghostface",
+    "Hurricane",
+    "Ironclad",
+    "Jedi",
+    "Knight",
+    "Lethal",
+    "Mystic",
+    "Nemesis",
+    "Oracle",
+    "Punisher",
+    "Quasar",
+    "Razor",
+    "Shadow",
+    "Thunder",
+    "Umbra",
+    "Viper",
+    "Warlock",
+    "Xecutioner",
+    "Yakuza",
+    "Zenith"
+];
 const colorWords = [
-    "Shimmering",  
-    "Deep",        
-    "Bold",       
-    "Rugged",  
-    "Gleaming",    
-    "Vibrant",     
-    "Verdant", 
-    "Warm",    
+    "Shimmering",
+    "Deep",
+    "Bold",
+    "Rugged",
+    "Gleaming",
+    "Vibrant",
+    "Verdant",
+    "Warm",
     "Mysterious",
-    "Serene", 
-    "Dusty",   
-    "Fragrant",    
-    "Vivid",       
-    "Brooding", 
+    "Serene",
+    "Dusty",
+    "Fragrant",
+    "Vivid",
+    "Brooding",
     "Tangerine",
     "Playful",
     "Mercurial",
-    "Crimson",     
-    "Shining",  
+    "Crimson",
+    "Shining",
     "Tranquil",
-    "Rustic",     
-    "Regal",       
-    "Pure",    
-    "Misty",      
-    "Blazing",  
-    "Steely"    
-  ];
+    "Rustic",
+    "Regal",
+    "Pure",
+    "Misty",
+    "Blazing",
+    "Steely"
+];
 const animalWords = [
-    "Leaping",     
+    "Leaping",
     "Ferocious",
-    "Venomous",  
-    "Mythical",   
-    "Soaring",   
-    "Sly",         
-    "Mighty",      
-    "Keen",     
-    "Fleet",      
-    "Stealthy",   
-    "Calm",      
-    "Roaring",  
-    "Nimble",     
-    "Melodious", 
-    "Silent",      
-    "Prowling",    
-    "Quick",     
-    "Bounding",   
+    "Venomous",
+    "Mythical",
+    "Soaring",
+    "Sly",
+    "Mighty",
+    "Keen",
+    "Fleet",
+    "Stealthy",
+    "Calm",
+    "Roaring",
+    "Nimble",
+    "Melodious",
+    "Silent",
+    "Prowling",
+    "Quick",
+    "Bounding",
     "Slithering",
-    "Crouching", 
-    "Mystical",    
-    "Circling",    
-    "Howling",  
-    "Scurrying", 
-    "Sturdy",      
-    "Striped"    
-  ];
+    "Crouching",
+    "Mystical",
+    "Circling",
+    "Howling",
+    "Scurrying",
+    "Sturdy",
+    "Striped"
+];
 
 function getWuName() {
     const firstName = document.getElementById('firstName').value
@@ -174,12 +174,12 @@ function getWuName() {
     const lastIndex = getIndexFromLetter(lastName[0]);
     if (lastIndex !== null) {
         fullName.push(lastNameWords[lastIndex]);
-    } 
+    }
 
     const colorIndex = getIndexFromLetter(color[0]);
     if (colorIndex !== null) {
         fullName.push(colorWords[colorIndex]);
-    } 
+    }
 
     const animalIndex = getIndexFromLetter(animal[0]);
     if (animalIndex !== null) {
